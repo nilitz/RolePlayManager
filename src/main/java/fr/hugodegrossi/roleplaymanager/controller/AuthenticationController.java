@@ -2,23 +2,26 @@ package fr.hugodegrossi.roleplaymanager.controller;
 
 import fr.hugodegrossi.roleplaymanager.entity.AuthRequest;
 import fr.hugodegrossi.roleplaymanager.util.JwtUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-public class WelcomeController {
+public class AuthenticationController {
 
-    @Autowired
-    private JwtUtil jwtUtil;
-    @Autowired
-    private AuthenticationManager authenticationManager;
+    private final JwtUtil jwtUtil;
+    private final AuthenticationManager authenticationManager;
 
-    @GetMapping("/")
-    public String welcome() {
-        return "Hello world";
+    public AuthenticationController(JwtUtil jwtUtil, AuthenticationManager authenticationManager) {
+        this.jwtUtil = jwtUtil;
+        this.authenticationManager = authenticationManager;
+    }
+
+    @GetMapping("/authenticated")
+    public boolean isAuthenticated() {
+        return SecurityContextHolder.getContext().getAuthentication().isAuthenticated();
     }
 
     @PostMapping("/authenticate")
