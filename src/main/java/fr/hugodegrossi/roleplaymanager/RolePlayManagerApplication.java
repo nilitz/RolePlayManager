@@ -20,8 +20,11 @@ import java.util.stream.Stream;
 @CrossOrigin("*")
 public class RolePlayManagerApplication {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    public RolePlayManagerApplication(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @PostConstruct
     public void initUsers() {
