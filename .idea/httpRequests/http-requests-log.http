@@ -1,3 +1,259 @@
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094803.400.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094801.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094428.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094425.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094324.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094320.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094225.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094213.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094037.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T094006.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093948.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"mario",
+"password":"password"
+}
+
+<> 2021-04-15T093537.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093529.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093526.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"mario",
+"password":"password"
+}
+
+<> 2021-04-15T093237.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093155.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"mario",
+"password":"password"
+}
+
+<> 2021-04-15T093111.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093108.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"mario",
+"password":"password"
+}
+
+<> 2021-04-15T093036.500.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T093024.500.json
+
+###
+
 POST http://localhost:9192/api/v1/authenticate
 Content-Type: application/json
 

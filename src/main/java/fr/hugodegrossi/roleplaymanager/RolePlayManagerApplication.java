@@ -20,22 +20,6 @@ import java.util.stream.Stream;
 @CrossOrigin("*")
 public class RolePlayManagerApplication {
 
-    private final UserRepository userRepository;
-
-    public RolePlayManagerApplication(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    @PostConstruct
-    public void initUsers() {
-        List<User> users = Stream.of(
-                new User(101, "hugo", "password", "contact@hugo.degrossi.fr")
-        ).collect(Collectors.toList());
-        userRepository.saveAll(users);
-    }
-
-
-
     public static void main(String[] args) {
         SpringApplication.run(RolePlayManagerApplication.class, args);
     }
