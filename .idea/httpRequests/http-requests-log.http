@@ -1,3 +1,205 @@
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzNjEzLCJpYXQiOjE2MTg0OTc2MTN9.OibGyTDQRb9LGhO66FM5snAuNUeQw8Sgn-BiVB5PeK4
+
+<> 2021-04-15T164023.200.txt
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzNjEzLCJpYXQiOjE2MTg0OTc2MTN9.OibGyTDQRb9LGhO66FM5snAuNUeQw8Sgn-BiVB5PeK4
+
+<> 2021-04-15T164021.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-15T164013.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-15T164009.200.txt
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzNTE3LCJpYXQiOjE2MTg0OTc1MTd9.YmJEZtUPGYqmx4tCCQP-W-98Wm0yTTrsjKOs2iUIipI
+
+<> 2021-04-15T163853.400.json
+
+###
+
+GET http://localhost:9192/api/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzNTE3LCJpYXQiOjE2MTg0OTc1MTd9.YmJEZtUPGYqmx4tCCQP-W-98Wm0yTTrsjKOs2iUIipI
+
+<> 2021-04-15T163846.404.json
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-15T163837.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-15T163832.200.txt
+
+###
+
+GET http://localhost:9192/api/v1/user
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg"
+
+<> 2021-04-15T163522.403.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg"
+
+<> 2021-04-15T163510.403.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg"
+
+<> 2021-04-15T163412.403.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg
+
+<> 2021-04-15T163405.400.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg
+
+<> 2021-04-15T163328.400.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+
+{
+"tokenStr":"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg"
+}
+
+<> 2021-04-15T163253.403.json
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+
+{
+"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzMTQ0LCJpYXQiOjE2MTg0OTcxNDR9.GGawAShDnXDv5f7CfjARz8THqdb1Z1eiWpFyYIjIjdg"
+}
+
+<> 2021-04-15T163240.403.json
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-15T163224.200.txt
+
+###
+
+GET http://localhost:9192/api/v1/user/me
+Content-Type: application/json
+
+{
+"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMyNTAxLCJpYXQiOjE2MTg0OTY1MDF9.1Y3GJE-3CsqvZevfhAxZAdB0K8su_oVmbW6fA1LX1bk"
+}
+
+<> 2021-04-15T163000.403.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T095722.409.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T095720.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-15T095709.400.json
+
+###
+
 POST http://localhost:9192/api/v1/register
 Content-Type: application/json
 
@@ -377,179 +579,6 @@ Content-Type: application/json
 }
 
 <> 2021-04-15T091405.403.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091357.403.json
-
-###
-
-POST http://localhost:9192/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T090838.200.txt
-
-###
-
-POST http://localhost:9192/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-###
-
-POST http://localhost:9192/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T090721.403.json
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTYxODQ0MTAwNCwiaWF0IjoxNjE4NDA1MDA0fQ.Z64jkd3Y-fFimaXCtFyTuvc7mu_ZonA-aWNqOz5skkw
-
-<> 2021-04-14T145938.200.txt
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTYxODQ0MTAwNCwiaWF0IjoxNjE4NDA1MDA0fQ.Z64jkd3Y-fFimaXCtFyTuvc7mu_ZonA-aWNqOz5skkw
-
-<> 2021-04-14T145658.403.json
-
-###
-
-POST http://localhost:9192/authenticate
-Content-Type: application/json
-
-{
-"username":"user1",
-"password":"pwd1"
-}
-
-<> 2021-04-14T145644.200.txt
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTYxODQ0MDg2MiwiaWF0IjoxNjE4NDA0ODYyfQ.aY1TzfuXmho-Q2oZVYgaB846Ugr1cCqjZ9hqMG1-0jc
-
-<> 2021-04-14T145540.403.json
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTYxODQ0MDg2MiwiaWF0IjoxNjE4NDA0ODYyfQ.aY1TzfuXmho-Q2oZVYgaB846Ugr1cCqjZ9hqMG1-0jc
-
-<> 2021-04-14T145436.403.json
-
-###
-
-POST http://localhost:9192/authenticate
-Content-Type: application/json
-
-{
-"username":"user1",
-"password":"pwd1"
-}
-
-<> 2021-04-14T145422.200.txt
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJodWdvIiwiZXhwIjoxNjE4NDQwODAxLCJpYXQiOjE2MTg0MDQ4MDF9.uIIY5LQuLuDPxwcpJVRqzaP9YCpeZK2O3Upiw_ehWO8
-
-<> 2021-04-14T145332.403.json
-
-###
-
-POST http://localhost:9192/authenticate
-Content-Type: application/json
-
-{
-"username":"hugo",
-"password":"password"
-}
-
-<> 2021-04-14T145321.200.txt
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJodWdvIiwiZXhwIjoxNjE4NDM5NzQxLCJpYXQiOjE2MTg0MDM3NDF9.BIFldr6t6Wa483U1EvaJY-azB7gJQMlVKUlcPlUFa-s
-
-<> 2021-04-14T144012.403.json
-
-###
-
-GET http://localhost:9192
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJodWdvIiwiZXhwIjoxNjE4NDM5NzQxLCJpYXQiOjE2MTg0MDM3NDF9.BIFldr6t6Wa483U1EvaJY-azB7gJQMlVKUlcPlUFa-s
-
-<> 2021-04-14T143740.403.json
-
-###
-
-POST http://localhost:9192/authenticate
-Content-Type: application/json
-
-{
-"username":"hugo",
-"password":"password"
-}
-
-<> 2021-04-14T143541.200.txt
-
-###
-
-POST http://localhost:9192/authenticate
-{:
-"username": "hugo",
-"password": "password"
-}:
-
-<> 2021-04-14T143311.400.html
-
-###
-
-POST http://localhost:9192/authenticate
-{:
-"username": "hugo",
-"password": "password"
-}:
-
-<> 2021-04-14T143256.400.html
 
 ###
 

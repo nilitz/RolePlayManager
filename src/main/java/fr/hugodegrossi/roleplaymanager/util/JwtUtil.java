@@ -14,7 +14,7 @@ import java.util.function.Function;
 @Service
 public class JwtUtil {
 
-    private String secret = "aidzsqd57yshq%esd";
+    private String secret = "lHK2dW5PbP5wyw9bAXRAJtfIHPsijGAElbHv2XUBgIGNmy0KyR9VvzR8KVUs96xYaHyG-MbQVwPljgE3ZvvWzcXPbYidrDwBMBh8doHo6AOtTdcOqH2HFnT-T7bubbTESZDPNkUzWKNNErBFegGI460UBstmgcY8iG7QDEhKihqI02FO4vOOARqYtM7IZ2OA9CgBVgMbnLGAf1TWIjsrEKwai-dRRhqQdcv_EihHxiauAALMV_iDjWlxwDMtaJagALME0nCgp1jRmIj4JoTSmiNNwm4IS6AAUYFRuh6asSgArJWG1xWRLqR9LIxZa0lQkibBnLSOHpAzdXpWkwLnpw";
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
