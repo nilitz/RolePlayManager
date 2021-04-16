@@ -33,8 +33,8 @@ public class AuthenticationController {
         this.userRepository = userRepository;
     }
 
-    @PostMapping("/authenticate")
-    public String generateToken(@RequestBody AuthRequest authRequest, HttpServletResponse response) throws Exception {
+    @PostMapping("/login")
+    public String logIn(@RequestBody AuthRequest authRequest, HttpServletResponse response) throws Exception {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword())
@@ -46,8 +46,8 @@ public class AuthenticationController {
         return jwtUtil.generateToken(authRequest.getUsername());
     }
 
-    @PostMapping("/register")
-    public String register(@RequestBody RegisterRequest registerRequest) throws Exception {
+    @PostMapping("/signup")
+    public String signUp(@RequestBody RegisterRequest registerRequest) throws Exception {
 
         // Vérifier si le nom ou l'email de l'utilisateur sont déjà présents dans la database
         if (userRepository.findByUsername(registerRequest.getUsername()) != null) {

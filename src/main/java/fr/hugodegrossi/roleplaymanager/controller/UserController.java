@@ -3,11 +3,9 @@ package fr.hugodegrossi.roleplaymanager.controller;
 import fr.hugodegrossi.roleplaymanager.entity.User;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
 import fr.hugodegrossi.roleplaymanager.util.JwtUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,8 +22,8 @@ public class UserController {
     }
 
     @GetMapping("/me")
-    public String getUser() {
-        UserDetails user = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return user.getUsername();
+    public User getUser() {
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        return this.userRepository.findByUsername(userDetails.getUsername());
     }
 }
