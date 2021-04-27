@@ -1,6 +1,6 @@
 package fr.hugodegrossi.roleplaymanager.controller;
 
-import fr.hugodegrossi.roleplaymanager.entity.User;
+import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
 import fr.hugodegrossi.roleplaymanager.util.JwtUtil;
 import org.springframework.security.core.context.SecurityContextHolder;

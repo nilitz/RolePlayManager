@@ -1,8 +1,7 @@
 package fr.hugodegrossi.roleplaymanager.service;
 
-import fr.hugodegrossi.roleplaymanager.entity.User;
+import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

@@ -1,4 +1,4 @@
-package fr.hugodegrossi.roleplaymanager.entity;
+package fr.hugodegrossi.roleplaymanager.entity.authentication;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

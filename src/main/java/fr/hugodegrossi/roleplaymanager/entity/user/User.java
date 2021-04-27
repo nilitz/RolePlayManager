@@ -1,4 +1,4 @@
-package fr.hugodegrossi.roleplaymanager.entity;
+package fr.hugodegrossi.roleplaymanager.entity.user;
 
 import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
