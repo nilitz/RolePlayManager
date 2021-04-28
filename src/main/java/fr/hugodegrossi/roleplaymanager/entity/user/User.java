@@ -1,17 +1,22 @@
 package fr.hugodegrossi.roleplaymanager.entity.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import fr.hugodegrossi.roleplaymanager.entity.roleplay.Roleplay;
 import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "RoleplayUser")
+@Table(name = "UserInfo")
 public class User {
     @Id
     @GeneratedValue
@@ -21,6 +26,15 @@ public class User {
     private String password;
     @Column(unique = true)
     private String email;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "gameMasterUsers")
+    private List<Roleplay> gameMasterRoleplays =  new ArrayList<>();
+
+    public void addToGM(Roleplay roleplay){
+        this.gameMasterRoleplays.add(roleplay);
+    }
+
 
     public User(String username, String password, String email) {
         this.username = username;

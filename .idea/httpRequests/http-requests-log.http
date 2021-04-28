@@ -1,3 +1,65 @@
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-28T212733.403.json
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-28T212700.403.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"password",
+  "email":"test@gmail.com"
+}
+
+<> 2021-04-28T134324.403.json
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-28T134311.403.json
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"test",
+"password":"test"
+}
+
+<> 2021-04-28T134301.403.json
+
+###
+
 GET http://localhost:9192/api/v1/user/me
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE4NTMzNjEzLCJpYXQiOjE2MTg0OTc2MTN9.OibGyTDQRb9LGhO66FM5snAuNUeQw8Sgn-BiVB5PeK4
@@ -514,71 +576,6 @@ Content-Type: application/json
 }
 
 <> 2021-04-15T092026.403.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091951.403.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091824.403.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091537.403.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091429.404.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T091405.403.json
 
 ###
 
