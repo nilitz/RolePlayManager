@@ -28,12 +28,14 @@ public class User {
     private String email;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "gameMasterUsers")
+    @ManyToMany(mappedBy = "gameMasters")
     private List<Roleplay> gameMasterRoleplays =  new ArrayList<>();
 
-    public void addToGM(Roleplay roleplay){
-        this.gameMasterRoleplays.add(roleplay);
-    }
+    @JsonIgnore
+    @ManyToMany(mappedBy = "players")
+    private List<Roleplay> playersRoleplays =  new ArrayList<>();
+
+
 
 
     public User(String username, String password, String email) {

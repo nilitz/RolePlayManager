@@ -1,12 +1,13 @@
 package fr.hugodegrossi.roleplaymanager.repository;
 
 import fr.hugodegrossi.roleplaymanager.entity.roleplay.Roleplay;
-import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
 public interface RoleplayRepository extends JpaRepository<Roleplay, Integer> {
     Roleplay findByName(String name);
-    List<Roleplay> findByGameMasterUsers_Username(String username);
+    Roleplay findById(int id);
+    List<Roleplay> findByGameMasters_Username(String username);
+    List<Roleplay> findByPlayers_Username(String username);
 }

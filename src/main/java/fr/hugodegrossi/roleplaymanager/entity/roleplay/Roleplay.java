@@ -21,6 +21,8 @@ public class Roleplay {
     private int id;
     @Column(unique = true)
     private String name;
+    @Column(columnDefinition = "TEXT", nullable = true)
+    private String description;
 
     @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(
@@ -28,10 +30,22 @@ public class Roleplay {
             inverseJoinColumns = @JoinColumn(name = "user_info_id"),
             joinColumns = @JoinColumn(name = "roleplay_id")
     )
-    private List<User> gameMasterUsers = new ArrayList<>();
+    private List<User> gameMasters = new ArrayList<>();
 
-    public void addToGM(User user){
-        this.gameMasterUsers.add(user);
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(
+            name = "gm_users",
+            inverseJoinColumns = @JoinColumn(name = "user_info_id"),
+            joinColumns = @JoinColumn(name = "roleplay_id")
+    )
+    private List<User> players = new ArrayList<>();
+
+    public void addToGameMasters(User user){
+        this.gameMasters.add(user);
+    }
+
+    public void addToPlayers(User user){
+        this.players.add(user);
     }
 
 
