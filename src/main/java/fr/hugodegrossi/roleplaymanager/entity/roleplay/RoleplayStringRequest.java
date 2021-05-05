@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RoleplayDescRequest {
-    private String description;
+public class RoleplayStringRequest {
+    private String postedString;
 }

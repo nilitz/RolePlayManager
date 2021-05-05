@@ -1,8 +1,8 @@
 package fr.hugodegrossi.roleplaymanager.controller;
 
 import fr.hugodegrossi.roleplaymanager.entity.roleplay.Roleplay;
-import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayDescRequest;
 import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayPostRequest;
+import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayStringRequest;
 import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import fr.hugodegrossi.roleplaymanager.repository.RoleplayRepository;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
@@ -61,9 +61,15 @@ public class RoleplayController {
     }
 
     @PostMapping("/roleplay/{id}/desc")
-    public void postRoleplayDesc(@RequestBody RoleplayDescRequest roleplayDescRequest, @PathVariable String id) {
+    public void postRoleplayDesc(@RequestBody RoleplayStringRequest roleplayDescRequest, @PathVariable String id) {
         Roleplay roleplay = roleplayRepository.findById(Integer.parseInt(id));
-        roleplay.setDescription(roleplayDescRequest.getDescription());
+        roleplay.setDescription(roleplayDescRequest.getPostedString());
+        roleplayRepository.save(roleplay);
+    }
+    @PostMapping("/roleplay/{id}/name")
+    public void postRoleplayName(@RequestBody RoleplayStringRequest roleplayNameRequest, @PathVariable String id) {
+        Roleplay roleplay = roleplayRepository.findById(Integer.parseInt(id));
+        roleplay.setName(roleplayNameRequest.getPostedString());
         roleplayRepository.save(roleplay);
     }
 }
