@@ -9,5 +9,4 @@ public interface RoleplayRepository extends JpaRepository<Roleplay, Integer> {
     Roleplay findByName(String name);
     Roleplay findById(int id);
     List<Roleplay> findByGameMasters_Username(String username);
-    List<Roleplay> findByPlayers_Username(String username);
 }

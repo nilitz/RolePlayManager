@@ -1,5 +1,7 @@
 package fr.hugodegrossi.roleplaymanager.entity.roleplay;
 
+import fr.hugodegrossi.roleplaymanager.entity.item.Item;
+import fr.hugodegrossi.roleplaymanager.entity.itemType.ItemType;
 import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,23 +33,9 @@ public class Roleplay {
             joinColumns = @JoinColumn(name = "roleplay_id")
     )
     private List<User> gameMasters = new ArrayList<>();
-
-    @ManyToMany(cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name = "gm_users",
-            inverseJoinColumns = @JoinColumn(name = "user_info_id"),
-            joinColumns = @JoinColumn(name = "roleplay_id")
-    )
-    private List<User> players = new ArrayList<>();
-
     public void addToGameMasters(User user){
         this.gameMasters.add(user);
     }
-
-    public void addToPlayers(User user){
-        this.players.add(user);
-    }
-
 
     public Roleplay(String name) {
         this.name = name;

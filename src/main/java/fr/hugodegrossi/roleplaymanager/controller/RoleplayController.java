@@ -1,17 +1,15 @@
 package fr.hugodegrossi.roleplaymanager.controller;
 
 import fr.hugodegrossi.roleplaymanager.entity.roleplay.Roleplay;
-import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayPostRequest;
-import fr.hugodegrossi.roleplaymanager.entity.roleplay.RoleplayStringRequest;
 import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import fr.hugodegrossi.roleplaymanager.repository.RoleplayRepository;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
+import fr.hugodegrossi.roleplaymanager.request.generic.StringRequest;
 import fr.hugodegrossi.roleplaymanager.util.JwtUtil;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
-import javax.management.relation.Role;
 import java.util.List;
 
 @RestController
@@ -35,19 +33,20 @@ public class RoleplayController {
         return this.roleplayRepository.findByGameMasters_Username(userDetails.getUsername());
     }
 
-
+    /*
     @GetMapping("/roleplay/player")
     public List<Roleplay> getUserPlayerRoleplay() {
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return this.roleplayRepository.findByPlayers_Username(userDetails.getUsername());
     }
+    */
 
     @PostMapping("/roleplay")
-    public void postRoleplay(@RequestBody RoleplayPostRequest roleplayPostRequest) {
+    public void postRoleplay(@RequestBody StringRequest roleplayPostRequest) {
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         User user = userRepository.findByUsername(userDetails.getUsername());
 
-        Roleplay roleplay = new Roleplay(roleplayPostRequest.getName());
+        Roleplay roleplay = new Roleplay(roleplayPostRequest.getPostedString());
 
         roleplayRepository.save(roleplay);
         roleplay.addToGameMasters(user);
@@ -61,13 +60,13 @@ public class RoleplayController {
     }
 
     @PostMapping("/roleplay/{id}/desc")
-    public void postRoleplayDesc(@RequestBody RoleplayStringRequest roleplayDescRequest, @PathVariable String id) {
+    public void postRoleplayDesc(@RequestBody StringRequest roleplayDescRequest, @PathVariable String id) {
         Roleplay roleplay = roleplayRepository.findById(Integer.parseInt(id));
         roleplay.setDescription(roleplayDescRequest.getPostedString());
         roleplayRepository.save(roleplay);
     }
     @PostMapping("/roleplay/{id}/name")
-    public void postRoleplayName(@RequestBody RoleplayStringRequest roleplayNameRequest, @PathVariable String id) {
+    public void postRoleplayName(@RequestBody StringRequest roleplayNameRequest, @PathVariable String id) {
         Roleplay roleplay = roleplayRepository.findById(Integer.parseInt(id));
         roleplay.setName(roleplayNameRequest.getPostedString());
         roleplayRepository.save(roleplay);

@@ -31,10 +31,6 @@ public class User {
     @ManyToMany(mappedBy = "gameMasters")
     private List<Roleplay> gameMasterRoleplays =  new ArrayList<>();
 
-    @JsonIgnore
-    @ManyToMany(mappedBy = "players")
-    private List<Roleplay> playersRoleplays =  new ArrayList<>();
-
 
 
 

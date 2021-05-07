@@ -1,4 +1,5 @@
-package fr.hugodegrossi.roleplaymanager.entity.roleplay;
+package fr.hugodegrossi.roleplaymanager.request.generic;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +8,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RoleplayPostRequest {
-    private String name;
+public class StringRequest {
+    private String postedString;
 }

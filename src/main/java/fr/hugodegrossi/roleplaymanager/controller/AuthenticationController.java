@@ -1,7 +1,7 @@
 package fr.hugodegrossi.roleplaymanager.controller;
 
-import fr.hugodegrossi.roleplaymanager.entity.authentication.AuthRequest;
-import fr.hugodegrossi.roleplaymanager.entity.authentication.RegisterRequest;
+import fr.hugodegrossi.roleplaymanager.request.authentication.AuthRequest;
+import fr.hugodegrossi.roleplaymanager.request.authentication.RegisterRequest;
 import fr.hugodegrossi.roleplaymanager.entity.user.User;
 import fr.hugodegrossi.roleplaymanager.repository.UserRepository;
 import fr.hugodegrossi.roleplaymanager.util.JwtUtil;
