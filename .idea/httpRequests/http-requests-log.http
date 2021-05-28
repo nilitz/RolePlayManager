@@ -1,3 +1,138 @@
+POST http://localhost:9192/api/v1/roleplay/2/item
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpbyIsImV4cCI6MTYyMDc3NTUxOCwiaWF0IjoxNjIwNzM5NTE4fQ.DLTE5E6BNuwcS5WqRduJRTD2LbFBHF1usCiigDEQrIg
+
+{
+  "postedStringOne":"Un item",
+  "postedStringTwo":"desc",
+  "postedList": [4, 3]
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay/2/item-type
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpbyIsImV4cCI6MTYyMDc3NTUxOCwiaWF0IjoxNjIwNzM5NTE4fQ.DLTE5E6BNuwcS5WqRduJRTD2LbFBHF1usCiigDEQrIg
+
+{
+  "postedString":"Un autre type"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay/2/item-type
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpbyIsImV4cCI6MTYyMDc3NTUxOCwiaWF0IjoxNjIwNzM5NTE4fQ.DLTE5E6BNuwcS5WqRduJRTD2LbFBHF1usCiigDEQrIg
+
+{
+  "postedString":"Un type"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJpbyIsImV4cCI6MTYyMDc3NTUxOCwiaWF0IjoxNjIwNzM5NTE4fQ.DLTE5E6BNuwcS5WqRduJRTD2LbFBHF1usCiigDEQrIg
+
+{
+  "postedString":"Je suis Un Nom"
+}
+
+###
+
+POST http://localhost:9192/api/v1/signup
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"Password1",
+  "email":"test@gmail.com"
+}
+
+<> 2021-05-11T152519.200.txt
+
+###
+
+POST http://localhost:9192/api/v1/authenticate
+Content-Type: application/json
+
+{
+"username":"mario",
+"password":"Password1"
+}
+
+<> 2021-05-11T152448.403.json
+
+###
+
+POST http://localhost:9192/api/v1/register
+Content-Type: application/json
+
+{
+  "username":"mario",
+  "password":"Password1",
+  "email":"test@gmail.com"
+}
+
+<> 2021-05-11T152439.403.json
+
+###
+
+POST http://localhost:9192/api/v1/roleplay/3/item-type
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTYyMDc3NDkzNiwiaWF0IjoxNjIwNzM4OTM2fQ.p7phVEc6PV28W_n1b3nCRer8EPCYShoWXMIlpya2P00
+
+{
+  "postedString":"Un autre type"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay/3/item-type
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTYyMDc3NDkzNiwiaWF0IjoxNjIwNzM4OTM2fQ.p7phVEc6PV28W_n1b3nCRer8EPCYShoWXMIlpya2P00
+
+{
+  "postedString":"Un type"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTYyMDc3NDkzNiwiaWF0IjoxNjIwNzM4OTM2fQ.p7phVEc6PV28W_n1b3nCRer8EPCYShoWXMIlpya2P00
+
+{
+  "postedString":"Je suis Un Nom"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTYyMDc3NDkzNiwiaWF0IjoxNjIwNzM4OTM2fQ.p7phVEc6PV28W_n1b3nCRer8EPCYShoWXMIlpya2P00
+
+{
+  "postedStringOne":"Je suis Un Nom"
+}
+
+###
+
+POST http://localhost:9192/api/v1/roleplay/2/item
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VybmFtZSIsImV4cCI6MTYyMDc2MDc2MCwiaWF0IjoxNjIwNzI0NzYwfQ.xFflZWdYS2R6ty3LaII_mOg3diYxo7mW8rkU8QKQD9A
+
+{
+  "postedStringOne":"mario",
+  "postedStringTwo":"desc",
+  "postedList": {
+    "1" : 1,
+    "2": 2
+  }
+}
+
+###
+
 POST http://localhost:9192/api/v1/register
 Content-Type: application/json
 
@@ -427,155 +562,6 @@ Content-Type: application/json
 }
 
 <> 2021-04-15T093529.500.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T093526.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T093237.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T093155.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T093111.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T093108.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T093036.500.json
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T093024.500.json
-
-###
-
-POST http://localhost:9192/api/v1/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T092252.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T092248.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/authenticate
-Content-Type: application/json
-
-{
-"username":"mario",
-"password":"password"
-}
-
-<> 2021-04-15T092126.200.txt
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-###
-
-POST http://localhost:9192/api/v1/register
-Content-Type: application/json
-
-{
-  "username":"mario",
-  "password":"password",
-  "email":"test@gmail.com"
-}
-
-<> 2021-04-15T092026.403.json
 
 ###
 

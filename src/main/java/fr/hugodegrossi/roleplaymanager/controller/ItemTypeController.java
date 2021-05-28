@@ -36,10 +36,11 @@ public class ItemTypeController {
     }
 
     @PostMapping("/{id}/item-type")
-    public void postItemType(@RequestBody StringRequest itemTypeRequest, @PathVariable String id) {
+    public ItemType postItemType(@RequestBody StringRequest itemTypeRequest, @PathVariable String id) {
         Roleplay roleplay = roleplayRepository.findById(Integer.parseInt(id));
         ItemType itemType = new ItemType(itemTypeRequest.getPostedString(), roleplay);
         itemTypeRepository.save(itemType);
+        return itemType;
     }
 
 }

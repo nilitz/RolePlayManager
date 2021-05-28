@@ -48,10 +48,11 @@ public class Item {
         this.itemTypes.add(itemType);
     }
 
-    public Item(String name, String description, Roleplay roleplay) {
+    public Item(String name, String description, Roleplay roleplay, List<ItemType> itemTypes) {
         this.roleplay = roleplay;
         this.name = name;
         this.description = description;
+        this.itemTypes = itemTypes;
     }
 
 }
